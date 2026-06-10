@@ -1,199 +1,773 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인프라 테크 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등촌 코인노래방 완전정복 가이드 - 노는게 제일 좋아</title>
+    <meta name="description" content="등촌 코인노래방 찐 가이드! 가격, 꿀팁, 실제 후기까지 한방에. 등촌에서 친구랑 발라드 떼창할 땐 여기로 와. 전화 010-6279-0862">
+    <meta name="keywords" content="등촌 코인노래방, 등촌 코노, 등촌 노래방, 코인노래방 가이드, 등촌 데이트, 등촌 놀거리, 등촌역 노래방">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://t3b04-dc-coin-guide-2.vercel.app">
+    
+    <!-- OG Meta -->
+    <meta property="og:title" content="등촌 코인노래방 완전정복 가이드 - 노는게 제일 좋아">
+    <meta property="og:description" content="등촌 코인노래방 찐 가이드! 가격, 꿀팁, 실제 후기까지 한방에. 등촌에서 친구랑 발라드 떼창할 땐 여기로 와.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b04-dc-coin-guide-2.vercel.app">
+    <meta property="og:image" content="https://t3b04-dc-coin-guide-2.vercel.app/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="등촌 코인노래방 완전정복 가이드 - 노는게 제일 좋아">
+    <meta name="twitter:description" content="등촌 코인노래방 찐 가이드! 가격, 꿀팁, 실제 후기까지 한방에. 등촌에서 친구랑 발라드 떼창할 땐 여기로 와.">
+    <meta name="twitter:image" content="https://t3b04-dc-coin-guide-2.vercel.app/og-image.jpg">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "등촌 코인노래방 가이드",
+        "description": "등촌 코인노래방 완전정복 가이드. 가격, 위치, 꿀팁, 실제 후기까지 한번에.",
+        "url": "https://t3b04-dc-coin-guide-2.vercel.app",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "강서구",
+            "addressLocality": "등촌동"
+        },
+        "areaServed": "등촌",
+        "priceRange": "₩₩"
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* === RESET & BASE === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #111111;
+            color: #ffff00;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.4;
+            padding: 24px;
+            min-height: 100vh;
+            font-size: 16px;
+        }
+
+        /* === BRUTALIST CORE === */
+        h1, h2, h3 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: #ffff00;
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 0.9;
+            margin: 0 0 16px -8px;
+            transform: rotate(-1deg);
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            margin: 0 0 16px -4px;
+            transform: rotate(0.5deg);
+            border-bottom: 4px solid #00ff41;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin: 0 0 8px 0;
+        }
+
+        a {
+            color: #00ff41;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+        }
+
+        a:hover {
+            color: #ffff00;
+            background-color: #111111;
+        }
+
+        p {
+            margin-bottom: 16px;
+            max-width: 70ch;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* === BORDERS & BOXES === */
+        .brutal-box {
+            border: 4px solid #ffff00;
+            padding: 24px;
+            background-color: #111111;
+            box-shadow: 8px 8px 0 #00ff41;
+            margin-bottom: 24px;
+        }
+
+        .brutal-box--accent {
+            border-color: #00ff41;
+            box-shadow: 8px 8px 0 #ffff00;
+        }
+
+        .brutal-box--skewed {
+            transform: rotate(-1deg);
+        }
+
+        /* === BUTTONS === */
+        .btn {
+            display: inline-block;
+            background-color: #ffff00;
+            color: #111111;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.4rem;
+            padding: 12px 32px;
+            border: 4px solid #111111;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.1s ease;
+            margin: 8px 0;
+            box-shadow: 4px 4px 0 #00ff41;
+        }
+
+        .btn:hover {
+            background-color: #00ff41;
+            color: #111111;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #ffff00;
+        }
+
+        /* === HEADER & NAV === */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-bottom: 6px solid #ffff00;
+            padding-bottom: 16px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .logo h1 {
+            font-size: 2.6rem;
+            margin: 0;
+            transform: none;
+            border: none;
+            display: block;
+        }
+
+        .logo p {
+            font-size: 1rem;
+            color: #00ff41;
+            margin: 0;
+        }
+
+        /* nav */
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+            font-family: 'Impact', sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #ffff00;
+            text-decoration: none;
+            border: 2px solid transparent;
+            padding: 4px 12px;
+            transition: 0.1s;
+        }
+
+        .nav-menu a:hover {
+            border-color: #00ff41;
+            background-color: #111111;
+            color: #00ff41;
+        }
+
+        .tel-link {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #00ff41 !important;
+            border: 4px solid #00ff41 !important;
+            padding: 4px 16px !important;
+            background-color: #111111;
+        }
+
+        .tel-link:hover {
+            background-color: #00ff41 !important;
+            color: #111111 !important;
+        }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: 4px solid #ffff00;
+            padding: 8px 12px;
+            font-size: 2rem;
+            color: #ffff00;
+            line-height: 1;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        /* === HERO === */
+        .hero {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .hero-visual {
+            background: linear-gradient(135deg, #ffff00 0%, #00ff41 100%);
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 6px solid #111111;
+            box-shadow: 12px 12px 0 #00ff41;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-visual::before {
+            content: "🎤🎶🔥";
+            font-size: 8rem;
+            opacity: 0.3;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            transform: rotate(-12deg);
+        }
+
+        .hero-visual .hero-text {
+            font-family: 'Impact', sans-serif;
+            font-size: 3.6rem;
+            text-align: center;
+            color: #111111;
+            text-shadow: 6px 6px 0 #00ff41, 12px 12px 0 #ffff00;
+            line-height: 0.9;
+            padding: 16px;
+            z-index: 1;
+        }
+
+        .hero-details {
+            background-color: #111111;
+            border: 4px solid #ffff00;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .hero-details h2 {
+            font-size: 2rem;
+            border: none;
+            margin: 0;
+        }
+
+        /* === SECTIONS === */
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 24px;
+            display: inline-block;
+            border-bottom: 6px solid #00ff41;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        /* === REVIEW CARDS === */
+        .review-card {
+            background-color: #111111;
+            border: 4px solid #ffff00;
+            padding: 20px;
+            box-shadow: 6px 6px 0 #00ff41;
+            transition: all 0.1s;
+            transform: rotate(0.5deg);
+        }
+
+        .review-card:nth-child(even) {
+            transform: rotate(-0.5deg);
+            box-shadow: -6px 6px 0 #00ff41;
+        }
+
+        .review-card:hover {
+            transform: rotate(0deg) translate(-2px, -2px);
+            box-shadow: 12px 12px 0 #00ff41;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .review-header h3 {
+            font-size: 1.2rem;
+            color: #ffff00;
+            margin: 0;
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            color: #00ff41;
+            opacity: 0.8;
+        }
+
+        .review-stars {
+            color: #ffff00;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* === FOOTER === */
+        footer {
+            border-top: 6px solid #ffff00;
+            padding-top: 24px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00ff41;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+
+            h1 {
+                font-size: 2.8rem;
+                margin-left: 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                min-height: 200px;
+            }
+
+            .hero-visual .hero-text {
+                font-size: 2.4rem;
+            }
+
+            .grid-2col, .grid-3col {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #111111;
+                border: 4px solid #ffff00;
+                padding: 16px;
+                gap: 12px;
+                margin-top: 12px;
+            }
+
+            .nav-menu a {
+                font-size: 1.4rem;
+                border-bottom: 2px solid #333;
+                padding: 8px 0;
+            }
+
+            .hamburger {
+                display: inline-block;
+            }
+
+            #menu-toggle:checked ~ .nav-menu {
+                display: flex;
+            }
+
+            header {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                flex: 1 1 auto;
+            }
+
+            .tel-link {
+                font-size: 1.2rem;
+                padding: 4px 12px !important;
+            }
+
+            .review-card {
+                transform: none !important;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* extra raw texture via pseudo */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath d='M1 0h1v1H1zm0 3h1v1H1zM3 2h1v1H3z' fill='%23ffff00' opacity='0.08'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* skewed section */
+        .skewed-bg {
+            background: linear-gradient(45deg, #111111 0%, #1a1a1a 100%);
+            border: 6px solid #00ff41;
+            padding: 24px;
+            transform: skewX(-1deg);
+            margin: 40px 0;
+        }
+
+        .skewed-bg > * {
+            transform: skewX(1deg);
+        }
+
+        .stat-badge {
+            display: inline-block;
+            background-color: #00ff41;
+            color: #111111;
+            font-weight: bold;
+            padding: 4px 16px;
+            border: 2px solid #ffff00;
+            font-size: 1.6rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
+
+<div class="container">
+
+    <!-- HEADER -->
     <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>인프라 테크 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인프라 테크</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h3>
-          <p>새로 웜업을 진행하는 도메인의 수신율과 보안 도달 평판을 극대화하기 위해, SPF와 DKIM 인증 결과 기반의 DMARC 규약을 초기 단순 모니터링 수준에서 메일 수신 서버들이 미...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h3>
-          <p>한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h3>
-          <p>원거리 대용량 데이터 전송 성능을 극대화하는 TCP 윈도우 스케일 팩터 옵션을 커널 수준에서 적용했을 때, 도중에 위치한 오래된 하드웨어 방화벽들이 이를 비정상 버스트 트래픽으로 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
+        <div class="logo">
+            <h1>🎤 등촌코노</h1>
+            <p>bro가 알려주는 찐 가이드</p>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+        <nav class="nav-menu" aria-label="메인 네비게이션">
+            <a href="#guide">가이드</a>
+            <a href="#reviews">후기</a>
+            <a href="#tips">꿀팁</a>
+            <a href="tel:010-6279-0862" class="tel-link">📞 전화</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="히어로">
+        <div class="hero-visual">
+            <div class="hero-text">
+                등촌 코노<br>완전정복
+            </div>
+        </div>
+        <div class="hero-details brutal-box--accent">
+            <h2 style="font-size:2.2rem;">🔥 1곡에 500원?</h2>
+            <p style="color:#e0e0e0; font-size:1.1rem;">
+                등촌에서 코인노래방 돌아다니면서 찐 가성비 맛집 찾음. 
+                친구랑 30곡 떼창해도 부담 제로. 전화 미리 하고 가셈!
+            </p>
+            <a href="tel:010-6279-0862" class="btn">📞 010-6279-0862</a>
+            <p style="color:#00ff41; font-size:0.9rem;">* 24시 영업 확인 필수</p>
+        </div>
+    </section>
+
+    <!-- GUIDE SECTION -->
+    <section id="guide">
+        <h2 class="section-title">📍 등촌 코노 가이드</h2>
+        <div class="grid-2col">
+            <div class="brutal-box">
+                <h3>🎯 가격 & 시스템</h3>
+                <p style="color:#ddd;">
+                    보통 1곡에 500~600원. 30분 정액제는 3,000~4,000원 정도. 
+                    등촌 쪽은 경쟁이 좀 있어서 생각보다 시설 좋은 곳 많음. 
+                    리모컨 고장난 곳도 있으니 미리 확인하셈.
+                </p>
+                <span class="stat-badge">최저 500원</span>
+            </div>
+            <div class="brutal-box brutal-box--accent">
+                <h3>📌 위치 & 팁</h3>
+                <p style="color:#ddd;">
+                    등촌역 2번 출구에서 3분 거리에 밀집. 
+                    골목 사이사이에 있어서 네비 찍고 가는 게 좋음. 
+                    주차는 좀 빡셈 → 대중교통 강추!
+                </p>
+                <span class="stat-badge">역 도보 3분</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews">
+        <h2 class="section-title">💬 찐 후기 (UGC)</h2>
+        <div class="grid-3col">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>🎤 등촌노래방짱</h3>
+                    <span class="review-date">2025-03-18</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                    친구랑 2시간 30곡 불렀는데 6,000원 밖에 안 나옴. 
+                    시설 깔끔하고 관리 잘 되어 있음. 
+                    등촌에서 코노 여기만 감!
+                </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>🔥 떼창은진리</h3>
+                    <span class="review-date">2025-03-15</span>
+                </div>
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">
+                    코인 5곡에 3,000원. 박자 약간 안 맞는 거 빼고는 괜찮았음. 
+                    마이크 2개라서 듀엣 가능. 다음에 또 올 듯!
+                </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>🎶 발라더</h3>
+                    <span class="review-date">2025-03-10</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                    등촌 코노 중에 제일 좋아. 음질 좋고 조명도 분위기 있음. 
+                    데이트 코스로 강추. 전화 예약하고 가셈!
+                </p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>🎸 락킹</h3>
+                    <span class="review-date">2025-03-05</span>
+                </div>
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">
+                    가성비 갑. 근데 에어컨이 안 나와서 여름에는 좀 더울 듯. 
+                    그래도 가격이 착해서 용서됨 ㅋㅋ
+                </p>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>🎤 힙쟁이</h3>
+                    <span class="review-date">2025-02-28</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                    자정 넘어서 갔는데 친절하게 받아줌. 
+                    신곡 많고 최신 노래 잘 되어 있음. 
+                    등촌에서 야간에 코노 찾으면 여기!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPS SECTION -->
+    <section id="tips" class="skewed-bg">
+        <div>
+            <h2 style="color:#ffff00; border-bottom: 6px solid #ffff00; display:inline-block; padding-bottom:4px;">🔥 등촌 코노 꿀팁</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
+                <div>
+                    <h3>⏰ 시간대</h3>
+                    <p style="color:#ddd;">오후 2-5시 한산. 저녁 8시 이후 붐빔. 주말 예약 필수!</p>
+                </div>
+                <div>
+                    <h3>💰 최고딜</h3>
+                    <p style="color:#ddd;">30분 정액제가 1곡씩 하는 거보다 20% 저렴. 2명 이상이면 정액제 강추.</p>
+                </div>
+                <div>
+                    <h3>🎵 음질</h3>
+                    <p style="color:#ddd;">TJ미디어 vs 금영 확인 가능. TJ가 보통 음질 좋고 노래 많음.</p>
+                </div>
+                <div>
+                    <h3>📞 전화</h3>
+                    <p style="color:#ddd;">미리 전화해서 자리 확인하고 가셈. 010-6279-0862</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align: center; padding: 24px 0;">
+        <h2 style="font-size:3rem; border:none;">지금 전화하고 떼창
+
+
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">등촌 코인노래방 가이드 경험자에게 물어본 현실적인 판단 기준</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제목: 창작한 제목 | "싱글 프레임 타일러 더든, 파이트 클럽의 미신과 비밀" 아, 진짜... 파이트 클럽 영화에서 타일러 더든이 등장하기 전에 이미 삽입되었던 싱글 프레임 장면들을 정리해보면, 이는 영화 전체에 걸쳐 그에게 맡겨진 숨은 비밀과 미신을 다룬 것으로 보</p>
       </div>
-    </footer>
+      <a href="posts/interview-002-s1go7j.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">등촌 코인노래방 가이드에 관한 흔한 오해, 직접 확인해보니 달랐던 점</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 에드워드 스노 Snowden이 공개한 NSA 프리즘 프로그램 슬라이드 중 언론이 다루지 않은 7장의 내용에 대해, 내부고발자가 건넨 USB와 그 원본 간의 차이는 실제 기밀해제 팩트체크를 위한 철저한 검증 과정을 요구합니다. ### 주요 링크 조건- 슬</p>
+      </div>
+      <a href="posts/myth-001-s1go7j.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-05">2026-06-05</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">야, 솔직히 이건 내부 자료 아니면 모르는 거다 – 파리 덩크 2003 vs 2021, 눈 씻고 봐도 다른 디테일</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">야, 솔직히 말해서, 요즘 나이키가 뱉어내는 ‘레트로’들 보면 한숨만 나온다. 내가 나이키에 있을 때만 해도 이렇지 않았거든. 특히 이 ‘나이키 SB 덩크 로우 파리’ 건은 진짜... 2003년 오리지널이랑 2021년 레트로를 두고 ‘똑같다’고 하는 놈들은 그냥 신발 </p>
+      </div>
+      <a href="posts/review-001.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
